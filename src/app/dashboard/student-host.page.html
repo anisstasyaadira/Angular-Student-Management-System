@@ -1,0 +1,144 @@
+<td-layout-nav title="Student Management System" navigationRoute="/">
+  <button mat-icon-button td-menu-button tdLayoutToggle>
+    <mat-icon>menu</mat-icon>
+  </button>
+  <div td-toolbar-content layout="row" layout-align="center center" flex>
+    <span>IIUM Student Management System</span>
+    <span flex></span>
+    <a mat-icon-button matTooltip="Profile">
+      <mat-icon>person</mat-icon>
+    </a>
+    <span>Administrator</span>
+  </div>
+
+  <div mat-content flex>
+    <div layout-gt-md="row">
+      <span flex-gt-md="70">
+        <mat-card>
+          <mat-card-title>List of Student</mat-card-title>
+          <mat-card-subtitle>International Islamic University Malaysia</mat-card-subtitle>
+          <mat-divider></mat-divider>
+          <mat-list>
+            <span flex="100" class="mat-padding" layout-gt-xs="row">
+              <div class="mat-caption tc-grey-700" flex-gt-xs="30">Name</div>
+              <div class="mat-caption tc-grey-700" flex-gt-xs="25">Matric Number</div>
+              <div class="mat-caption tc-grey-700" flex-gt-xs="30">Study Level</div>
+            </span>
+            <mat-divider></mat-divider>
+            <ng-template let-student let-last="last" ngFor [ngForOf]="students$ | async">
+              <mat-list-item>
+                <!--<h3 mat-line> {{student?.matricNumber}} </h3>-->
+                <!--<span flex></span>-->
+                <span flex="100" layout-gt-xs="row">
+                  <div><mat-icon mat-list-avatar>face</mat-icon></div>
+                  <div class="mat-caption tc-grey-700" flex-gt-xs="30"> {{ student?.name }} </div>
+                  <div class="mat-caption tc-grey-700" flex-gt-xs="30"> {{ student?.matricNumber }} </div>
+                  <!--<div class="mat-caption tc-grey-700" flex-gt-xs="50"> {{ student?.course }} </div>-->
+                  <div class="mat-caption tc-grey-700" flex-gt-xs="30"> {{ student?.studyLevel | studentStudyLevelPipe }} </div>
+                </span>
+                <span flex="10">
+                  <button mat-icon-button (click)="viewStudent(student)">
+                    <mat-icon matTooltip="Click to see details">chevron_right</mat-icon>
+                  </button>
+                </span>
+                <span>
+                  <mat-checkbox></mat-checkbox>
+                </span>
+              </mat-list-item>
+              <mat-divider *ngIf="!last"></mat-divider>
+            </ng-template>
+          </mat-list>
+        </mat-card>
+      </span>
+      <div flex-gt-md="30">
+        <mat-card>
+          <mat-nav-list flex dense>
+            <mat-list-item>
+              <mat-icon mat-list-avatar>check</mat-icon>
+              <h4 mat-line>Activate</h4>
+              <p mat-line>Student Status: Active</p>
+            </mat-list-item>
+            <mat-list-item>
+              <mat-icon mat-list-avatar>cancel</mat-icon>
+              <h4 mat-line>Deactivate</h4>
+              <p mat-line>Student Status: Inactive</p>
+            </mat-list-item>
+            <mat-list-item>
+              <mat-icon mat-list-avatar>delete</mat-icon>
+              <h4 mat-line>Delete</h4>
+              <p mat-line>Delete this record</p>
+            </mat-list-item>
+          </mat-nav-list>
+        </mat-card>
+        <mat-nav-list>
+          <mat-chip-list>
+            <mat-chip selected="true">Active students</mat-chip>
+            <mat-chip selected="true">Inactive students</mat-chip>
+          </mat-chip-list>
+        </mat-nav-list>
+        <mat-nav-list>
+          <mat-chip-list>
+            <mat-chip selected="true">Year 1</mat-chip>
+            <mat-chip selected="true">Year 2</mat-chip>
+            <mat-chip selected="true">Year 3</mat-chip>
+            <mat-chip selected="true">Year 4</mat-chip>
+          </mat-chip-list>
+        </mat-nav-list>
+        <mat-nav-list>
+          <mat-chip-list>
+            <mat-chip selected="true">Malaysian students</mat-chip>
+            <mat-chip selected="true">Non-Malaysian students</mat-chip>
+          </mat-chip-list>
+        </mat-nav-list>
+      </div>
+      <mat-nav-list>
+        <mat-vertical-stepper [linear]="isLinear" #stepper="matVerticalStepper">
+          <mat-step [stepControl]="firstFormGroup">
+            <form [formGroup]="firstFormGroup">
+              <ng-template matStepLabel>IIUM SMS username</ng-template>
+              <mat-form-field>
+                <input matInput placeholder="Username" formControlName="firstCtrl" required>
+              </mat-form-field>
+              <div>
+                <button mat-button matStepperNext>Next</button>
+              </div>
+            </form>
+          </mat-step>
+          <mat-step [stepControl]="secondFormGroup">
+            <form [formGroup]="secondFormGroup">
+              <ng-template matStepLabel>IIUM SMS password</ng-template>
+              <mat-form-field>
+                <input matInput placeholder="Password" formControlName="secondCtrl" required>
+              </mat-form-field>
+              <div>
+                <button mat-button matStepperNext>Next</button>
+                <button mat-button matStepperPrevious>Back</button>
+              </div>
+            </form>
+          </mat-step>
+          <mat-step>
+            <ng-template matStepLabel>Add</ng-template>
+            <!--New SMS user added.-->
+            <div>
+              <button mat-button matStepperPrevious (click)="submit()">Submit</button>
+              <button mat-button (click)="stepper.reset()">Reset</button>
+            </div>
+          </mat-step>
+        </mat-vertical-stepper>
+      </mat-nav-list>
+    </div>
+  </div>
+
+  <a mat-fab color="accent" class="mat-fab-bottom-right fixed z-3" (click)="showAddDialog()">
+    <mat-icon>add</mat-icon>
+  </a>
+
+  <td-layout-footer>
+    <div layout="row" layout-align="start center">
+      <span
+        class="mat-caption">Copyright &copy; 2018 International Islamic University Malaysia. All rights reserved</span>
+      <span flex></span>
+    </div>
+  </td-layout-footer>
+</td-layout-nav>
+

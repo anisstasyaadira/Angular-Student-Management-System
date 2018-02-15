@@ -1,0 +1,37 @@
+{
+  "matricNumber": "1425392",
+  "icNumber": "930216-14-6190",
+  "passportNumber": "A123456",
+  "name": "Aniss Tasya Adira",
+  "address": {
+    "line1": "No. 42, Jalan Melur",
+    "line2": "Taman Melur",
+    "postcode": "68000",
+    "state": "Ampang",
+    "city": "Selangor"
+  },
+  "phoneNumber": "016-2023991",
+  "homeNumber": "03-987654321",
+  "emailAddress": "aniss.tasya.adira.roslee@gmail.com",
+  "nationality": "Malaysian",
+  "faculty": {
+    "facultyName": "KICT",
+    "department": "DCS",
+    "courses": "BCS"
+  },
+  "department": {
+    "departmentId": "DCS",
+    "departmentName": "Department of Computer Science"
+  },
+  "course": {
+    "courseCode": "BCS",
+    "courseName": "Bachelor of Computer Science",
+    "creditHour": "130"
+  },
+  "studyLevel": "YEAR_4",
+  "sponsor":
+  {
+    "type": "LOAN PA&MA",
+    "name": "MAK BAPAK BAYAR OI"
+  }
+}

@@ -1,0 +1,261 @@
+[
+  {
+    "matricNumber": "1425392",
+    "icNumber": "930216-14-6190",
+    "passportNumber": "A123456",
+    "name": "Aniss Tasya Adira",
+    "address": {
+      "line1": "No. 42, Jalan Melur",
+      "line2": "Taman Melur",
+      "postcode": "68000",
+      "state": "Ampang",
+      "city": "Selangor"
+    },
+    "phoneNumber": "016-2023991",
+    "homeNumber": "03-987654321",
+    "emailAddress": "aniss.tasya.adira.roslee@gmail.com",
+    "nationality": "Malaysian",
+    "faculty": {
+      "facultyName": "KICT",
+      "department": "DCS",
+      "courses": "BCS"
+    },
+    "department": {
+      "departmentId": "DCS",
+      "departmentName": "Department of Computer Science"
+    },
+    "course": {
+      "courseCode": "BCS",
+      "courseName": "Bachelor of Computer Science",
+      "creditHour": "130"
+    },
+    "studyLevel": "YEAR_4",
+    "sponsor":
+    {
+      "type": "LOAN PA&MA",
+      "name": "MAK BAPAK BAYAR OI"
+    }
+  },
+  {
+    "matricNumber": "1342442",
+    "icNumber": "813771-13-2490",
+    "passportNumber": "B1321414",
+    "name": "Muhammad Saiful",
+    "address": {
+      "line1": "No. 8, Jalan Cheras",
+      "line2": "Taman Jubli",
+      "postcode": "213321",
+      "state": "Cheras",
+      "city": "KL"
+    },
+    "phoneNumber": "012-1381941",
+    "homeNumber": "03-47128745",
+    "emailAddress": "saiful@gmail.com",
+    "nationality": "Malaysian",
+    "faculty": {
+      "facultyName": "KOE",
+      "department": "DOE",
+      "courses": "BEN"
+    },
+    "department": {
+      "departmentId": "DOE",
+      "departmentName": "Department of Engineering"
+    },
+    "course": {
+      "courseCode": "BEN",
+      "courseName": "Bachelor of Engineering",
+      "creditHour": "150"
+    },
+    "studyLevel": "YEAR_3",
+    "sponsor":
+    {
+      "type": "PTPTN",
+      "name": "PEE TEE PEE TEE EN"
+    }
+  },
+  {
+    "matricNumber": "1313141",
+    "icNumber": "791719-14-2411",
+    "passportNumber": "C1311414",
+    "name": "Syed Hassan",
+    "address": {
+      "line1": "No. 14, Jalan Saga",
+      "line2": "Taman Kobis",
+      "postcode": "52000",
+      "state": "Ampang",
+      "city": "Selangor"
+    },
+    "phoneNumber": "016-1314141",
+    "homeNumber": "03-243634474",
+    "emailAddress": "syedhassan@gmail.com",
+    "nationality": "Malaysian",
+    "faculty": {
+      "facultyName": "KOED",
+      "department": "DEL",
+      "courses": "BENL"
+    },
+    "department": {
+      "departmentId": "DEL",
+      "departmentName": "Department of English Language"
+    },
+    "course": {
+      "courseCode": "BENL",
+      "courseName": "Bachelor of English Language",
+      "creditHour": "125"
+    },
+    "studyLevel": "YEAR_1",
+    "sponsor":
+    {
+      "type": "MARA",
+      "name": "Majlis Amanah Rakyat"
+    }
+  },
+  {
+    "matricNumber": "1223245",
+    "icNumber": "839189-14-3190",
+    "passportNumber": "D3141415",
+    "name": "Ahmad Faris",
+    "address": {
+      "line1": "Tingkat 8, Jalan Tun",
+      "line2": "Taman Ismail",
+      "postcode": "44732",
+      "state": "Cheras",
+      "city": "KL"
+    },
+    "phoneNumber": "016-1442536",
+    "homeNumber": "03-32425353",
+    "emailAddress": "faris@gmail.com",
+    "nationality": "Malaysian",
+    "faculty": {
+      "facultyName": "KICT",
+      "department": "DCS",
+      "courses": "BCS"
+    },
+    "department": {
+      "departmentId": "DCS",
+      "departmentName": "Department of Computer Science"
+    },
+    "course": {
+      "courseCode": "BCS",
+      "courseName": "Bachelor of Computer Science",
+      "creditHour": "130"
+    },
+    "studyLevel": "YEAR_2",
+    "sponsor":
+    {
+      "type": "JPA",
+      "name": "Jabatan Pengajian Awam"
+    }
+  },
+  {
+    "matricNumber": "3255262",
+    "icNumber": "839189-14-3190",
+    "passportNumber": "D3141415",
+    "name": "Arnold Lalala",
+    "address": {
+      "line1": "Tingkat 8, Jalan Tun",
+      "line2": "Taman Ismail",
+      "postcode": "44732",
+      "state": "Cheras",
+      "city": "KL"
+    },
+    "phoneNumber": "016-1442536",
+    "homeNumber": "03-32425353",
+    "emailAddress": "arorodu@gmail.com",
+    "nationality": "Non-Malaysian",
+    "faculty": {
+      "facultyName": "KICT",
+      "department": "DCS",
+      "courses": "BCS"
+    },
+    "department": {
+      "departmentId": "DCS",
+      "departmentName": "Department of Computer Science"
+    },
+    "course": {
+      "courseCode": "BCS",
+      "courseName": "Bachelor of Computer Science",
+      "creditHour": "130"
+    },
+    "studyLevel": "YEAR_3",
+    "sponsor":
+    {
+      "type": "JPA",
+      "name": "Jabatan Pengajian Awam"
+    }
+  },
+  {
+    "matricNumber": "6426221",
+    "icNumber": "839189-14-3190",
+    "passportNumber": "D3141415",
+    "name": "Fazari Zaki",
+    "address": {
+      "line1": "Tingkat 8, Jalan Tun",
+      "line2": "Taman Ismail",
+      "postcode": "44732",
+      "state": "Cheras",
+      "city": "KL"
+    },
+    "phoneNumber": "016-1442536",
+    "homeNumber": "03-32425353",
+    "emailAddress": "zaki@gmail.com",
+    "nationality": "Malaysian",
+    "faculty": {
+      "facultyName": "KICT",
+      "department": "DCS",
+      "courses": "BCS"
+    },
+    "department": {
+      "departmentId": "DCS",
+      "departmentName": "Department of Computer Science"
+    },
+    "course": {
+      "courseCode": "BCS",
+      "courseName": "Bachelor of Computer Science",
+      "creditHour": "130"
+    },
+    "studyLevel": "YEAR_1",
+    "sponsor":
+    {
+      "type": "JPA",
+      "name": "Jabatan Pengajian Awam"
+    }
+  },
+  {
+    "matricNumber": "1223245",
+    "icNumber": "839189-14-3190",
+    "passportNumber": "D3141415",
+    "name": "Timothy Lampung",
+    "address": {
+      "line1": "Tingkat 8, Jalan Tun",
+      "line2": "Taman Ismail",
+      "postcode": "44732",
+      "state": "Cheras",
+      "city": "KL"
+    },
+    "phoneNumber": "016-1442536",
+    "homeNumber": "03-32425353",
+    "emailAddress": "tim@gmail.com",
+    "nationality": "Non-Malaysian",
+    "faculty": {
+      "facultyName": "KICT",
+      "department": "DCS",
+      "courses": "BCS"
+    },
+    "department": {
+      "departmentId": "DCS",
+      "departmentName": "Department of Computer Science"
+    },
+    "course": {
+      "courseCode": "BCS",
+      "courseName": "Bachelor of Computer Science",
+      "creditHour": "130"
+    },
+    "studyLevel": "YEAR_3",
+    "sponsor":
+    {
+      "type": "JPA",
+      "name": "Jabatan Pengajian Awam"
+    }
+  }
+]
